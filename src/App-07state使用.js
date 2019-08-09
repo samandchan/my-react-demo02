@@ -4,25 +4,16 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {  
-      msg: 100
+      msg: '哈哈哈123'
     }
-  }
-  handleClick = () => {
-    let {msg} = this.state
-    msg += 100
-    this.setState({
-      msg
-    })
-    console.log(this.state.msg);
   }
   render() { 
     return (  
       <Fragment>
-        <div onClick={this.handleClick}> {this.state.msg} </div>
+        <h1> {this.state.msg} </h1>
       </Fragment>
     );
   }
 }
- 
 
 export default App;
